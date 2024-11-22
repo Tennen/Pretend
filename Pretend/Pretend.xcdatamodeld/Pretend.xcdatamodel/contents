@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ChatPartner" representedClassName="ChatPartner" syncable="YES" codeGenerationType="class">
+        <attribute name="avatar" optional="YES" attributeType="Binary"/>
+        <attribute name="nickname" optional="YES" attributeType="String"/>
+        <attribute name="persistHistory" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="chatPartner" inverseEntity="Message"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES" codeGenerationType="class">
+        <attribute name="content" attributeType="String"/>
+        <attribute name="isUser" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="messageType" attributeType="String" defaultValueString="text"/>
+        <attribute name="timestamp" attributeType="Date" defaultDateTimeInterval="0" usesScalarValueType="NO"/>
+        <relationship name="chatPartner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatPartner" inverseName="messages" inverseEntity="ChatPartner"/>
+    </entity>
+</model>

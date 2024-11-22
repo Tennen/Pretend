@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    <!-- Definitions for gradients -->
+    <defs>
+        <!-- Background gradient -->
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#7a1aa6"/>
+            <stop offset="100%" style="stop-color:#660099"/>
+        </linearGradient>
+        
+        <!-- Enhanced bubble gradient -->
+        <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+            <stop offset="45%" style="stop-color:#ffffff;stop-opacity:0.98"/>
+            <stop offset="100%" style="stop-color:#f8f8f8;stop-opacity:0.95"/>
+        </linearGradient>
+        
+        <!-- Radial gradient for a subtle edge effect -->
+        <radialGradient id="edgeGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="80%" style="stop-color:#ffffff;stop-opacity:0"/>
+            <stop offset="90%" style="stop-color:#ffffff;stop-opacity:0.1"/>
+            <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.2"/>
+        </radialGradient>
+        
+        <!-- Dot gradient -->
+        <linearGradient id="dotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#7a1aa6"/>
+            <stop offset="100%" style="stop-color:#660099"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Background with rounded corners -->
+    <rect x="0" y="0" width="1024" height="1024" fill="url(#bgGradient)"/>
+    
+    <!-- Cloud-like message bubble group -->
+    <g transform="translate(460, 650)">
+        <!-- Subtle glow behind the bubble -->
+        <path d="M-280,-250
+                 C-280,-330 -220,-370 -140,-370
+                 C-100,-370 -70,-360 -50,-340
+                 C-30,-390 20,-430 80,-430
+                 C160,-430 230,-380 250,-310
+                 C270,-330 300,-340 330,-340
+                 C390,-340 440,-290 440,-230
+                 C440,-210 435,-190 425,-172
+                 C435,-150 440,-126 440,-100
+                 C440,-20 380,40 10,40
+                 L10,40
+                 L-80,140
+                 L-90,40
+                 C-200,40 -340,0 -340,-100
+                 C-340,-126 -335,-150 -325,-172
+                 C-335,-190 -340,-210 -340,-230
+                 C-340,-270 -320,-300 -290,-320
+                 C-290,-290 -280,-270 -280,-250" 
+              fill="url(#edgeGlow)"
+              transform="scale(1.05)"/>
+
+        <!-- Main cloud-like bubble -->
+        <path d="M-280,-250
+                 C-280,-330 -220,-370 -140,-370
+                 C-100,-370 -70,-360 -50,-340
+                 C-30,-390 20,-430 80,-430
+                 C160,-430 230,-380 250,-310
+                 C270,-330 300,-340 330,-340
+                 C390,-340 440,-290 440,-230
+                 C440,-210 435,-190 425,-172
+                 C435,-150 440,-126 440,-100
+                 C440,-20 380,40 10,40
+                 L10,40
+                 L-80,140
+                 L-90,40
+                 C-200,40 -340,0 -340,-100
+                 C-340,-126 -335,-150 -325,-172
+                 C-335,-190 -340,-210 -340,-230
+                 C-340,-270 -320,-300 -290,-320
+                 C-290,-290 -280,-270 -280,-250" 
+              fill="url(#bubbleGradient)"/>
+        
+        <!-- Dots with gradient -->
+        <!-- <circle cx="-125" cy="-80" r="40" fill="url(#dotGradient)"/>
+        <circle cx="35" cy="-80" r="40" fill="url(#dotGradient)"/>
+        <circle cx="175" cy="-80" r="40" fill="url(#dotGradient)"/> -->
+    </g>
+</svg> 
